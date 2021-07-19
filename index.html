@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cow Grazing Simulator</title>
+        <link rel='stylesheet' href='stylesheet.css'>
+        <script src='script.js'></script>
+    </head>
+    <body>
+        <main>
+            <div class='dimensions-wrapper'>
+                Grid Dimensions:&nbsp;
+                <input class='grid-input-1' type='number' min='1' /> by <input class='grid-input-2' type='number' min='1' />&nbsp;
+                <button class='generate-btn' onclick='generateBoard()'>Generate</button>
+            </div>
+            <div class='starting-position-wrapper'>
+                Starting Position (0-based indexing):&nbsp;
+                <input class='position-input-x' type='number' min='0' placeholder="x" /> <input class='position-input-y' min='0' placeholder="y" type='number' />&nbsp;
+                <button onclick='setPosition()'>Set</button>
+            </div>
+            <div class='instructions-wrapper'>
+                <b>Instructions</b>
+                <hr />
+                Use arrow keys on your keyboard to control the cow. Or, at any time, you may provide a set of instructions for the cow to move. Use 'f' for forward, 'b' for backward, 'l' for left, and 'r' for right.
+                A sample instruction string may look like this: <pre>ffbblr</pre> (forward, forward, backward, backward, left, right). If your instruction string contains invalid inputs or invalid instructions, it will be disregarded, and only the valid instructions will be executed.
+                You may instruct the cow to move with your keyboard simultaneously with an instruction string.
+                <br />
+                <br />
+                <input class='instructions' placeholder="Instruction String" />&nbsp;<button onclick='executeInstructions()'>Execute</button>
+            </div>
+        </main>
+    </body>
+</html>

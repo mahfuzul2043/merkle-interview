@@ -1,0 +1,46 @@
+html, body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-input-1, .grid-input-2, .position-input-x, .position-input-y {
+    width: 35px;
+}
+
+.starting-position-wrapper {
+    margin-top: 10px;
+    display: none;
+}
+
+.board {
+    margin-bottom: 10px;
+}
+
+.row {
+    display: flex;
+}
+
+.square {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+}
+
+.instructions-wrapper {
+    display: none;
+    margin-right: 50px;
+    width: 300px;
+}
